@@ -131,10 +131,12 @@
                 minutes, depending on the complexity of the input and density of control points. Movement speed was
                 capped to avoid mechanical failures, but path execution remained responsive and fluid throughout.
                 <br><br>
-                We verified the performance of our stepper motor signals using an oscilloscope. As shown in figure __,
+                We verified the performance of our stepper motor signals using an oscilloscope. As shown in the left
+                figure below,
                 the step pulses had a consistent spacing of 600 us, corresponding to a step frequency of 1.667 kHz - a
                 rate we used during normal drawing operation to balance speed and mechanical stability. Additionally,
-                the pulse width, as shown in figure __, was measured to be 5 us, which is well within the required range
+                the pulse width, as shown in figure below to the right, was measured to be 5 us, which is well within
+                the required range
                 for reliable triggering on standard stepper drivers. This also matches the intended behavior in the
                 Pico’s firmware. These measurements confirm that our firmware generates clean, consistent pulses that
                 are both frequent enough for smooth motion and long enough to be correctly interpreted by the driver
@@ -199,10 +201,11 @@
                 This project successfully demonstrated the design and implementation of LINUS - an
                 Etch-A-Sketch-inspired automatic drawing machine. Our system used a CoreXY style belt drive mechanism to
                 control the movement of a marker, allowing us to translate digital images into continuous, drawable
-                paths using edge detection and spline interpolation techniques. The mechanical structure achieved
+                paths using edge detection and graph algorithms. The mechanical structure achieved
                 consistent movement with excellent stability and accuracy. On the software side, the system achieved
-                accurate edge detection and optimal path planning with one-line-drawing constraints. While the final
-                drawing fidelity was limited by the resolution
+                accurate feature simplification and optimal path planning with one-line-drawing constraints. While the
+                final
+                drawing fidelity was slightly limited by the resolution
                 and mechanical accuracy of the system, the curves traced on paper generally reflected the structure of
                 the original image.
                 <br><br>
