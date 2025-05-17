@@ -1,0 +1,13 @@
+imageio==2.37.0
+joblib==1.4.2
+lazy_loader==0.4
+numpy==2.2.5
+opencv-python==4.11.0.86
+packaging==25.0
+pillow==11.2.1
+pygame==2.6.1
+scikit-image==0.25.2
+scikit-learn==1.6.1
+scipy==1.15.2
+threadpoolctl==3.6.0
+tifffile==2025.3.30
